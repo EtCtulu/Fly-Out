@@ -1,0 +1,52 @@
+{
+    "name": "InputBike",
+    "maps": [
+        {
+            "name": "bike",
+            "id": "b3533ecd-b8c7-4a0c-b37a-e2ee6a49503f",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "f0878fe9-8098-4f15-af87-0e1cf353d51e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "push",
+                    "type": "Button",
+                    "id": "9acb6bf6-918b-40a4-b7a9-fdf0ed79a196",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "115a668c-da2e-46e4-9412-2116ab4c6a16",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "push",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e73a2114-87ed-43ef-b683-a6e3cd29818b",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
