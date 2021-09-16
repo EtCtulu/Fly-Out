@@ -29,6 +29,7 @@ public class BikeController : MonoBehaviour
         input = new BirdInput();
         input.bird.Enable();
         
+        
     }
 
     private void FixedUpdate()
@@ -39,6 +40,30 @@ public class BikeController : MonoBehaviour
 
     private void MoveBird()
     {
-        currentValue = Mathf.Clamp01(currentValue + addedValue);
+        Vector2 d = new Vector2(0 , InputStick().y * horizontalSpeed * Time.deltaTime * currentValue);
+        if(d.y == 0)
+        {
+            if (timerHorizontal >= timeBeforeDecreasingPosition)
+            {
+                this.transform.localPosition = new Vector3(0, Mathf.Lerp(this.transform.localPosition.y, 0, (returnHorizontalSpeed * currentValue) / 1000), 0);
+            }
+            else
+            {
+                timerHorizontal += Time.deltaTime;
+            }
+        }
+        else
+        {
+            this.transform.localPosition = new Vector3(0, Mathf.Clamp(this.transform.localPosition.y + d.y, -maxHorizontalDistance, maxHorizontalDistance), 0);
+            timerHorizontal = 0;
+        }
+    }
+
+    
+
+    private Vector2 InputStick()
+    {
+        Vector2 delta = input.bird.fly.ReadValue<Vector2>();
+        return delta;
     }
 }
