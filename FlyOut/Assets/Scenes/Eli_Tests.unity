@@ -292,8 +292,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863330068}
-  m_LocalRotation: {x: 0.097290695, y: -0.7003817, z: 0.09729071, w: 0.7003817}
-  m_LocalPosition: {x: 0.911, y: 0.303, z: -2.2970985e-15}
+  m_LocalRotation: {x: 0.09729187, y: -0.7003815, z: 0.09729187, w: 0.7003815}
+  m_LocalPosition: {x: 0.619, y: 0.321, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -334,7 +334,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: b148f05516643cb4cb13095fd761da59, type: 3}
+  - {fileID: 2100000, guid: 2b4106a1a89556749aad5409086a4858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -523,7 +523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3932577470709403684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.01690615, z: -0.025303693}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7063843119517136328}
