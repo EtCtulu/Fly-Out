@@ -26,7 +26,11 @@ public class Deroulement : MonoBehaviour
     private bool bool8 = false;
     private bool bool9 = false;
     private bool bool10 = false;
-    // Update is called once per frame
+    private bool bool11 = false;
+    private bool bool12 = false;
+    
+    
+
     void Update()
     {
         timer = timer + Time.deltaTime;
@@ -89,14 +93,27 @@ public class Deroulement : MonoBehaviour
             bool8 = true;
         }
 
-        if(timer <= 112 && timer >= 111 && bool9 == false)
+        if(timer <= 112 && timer >= 111 && bool11 == false)
+        {
+            text.UpdateText("Gender, episode V, Dysphoria Strikes Back. ");
+            bool11 = true;
+        }
+
+        //PHASE 5
+        if(timer <= 123 && timer >= 122 && bool9 == false)
         {
             text.UpdateText("I finally feel like myself. ");
             phase4.SetActive(false);
             phase5.SetActive(true);
             bool9 = true;
         }
-        if(timer <= 130 && timer >= 129 && bool10 == false)
+        if(timer <= 135 && timer >= 134 && bool12 == false)
+        {
+            text.UpdateText("I’m not alone. ");
+            bool12 = true;
+        }
+
+        if(timer <= 150 && timer >= 149 && bool10 == false)
         {
             // text.UpdateText("I finally feel like myself. ");
             gM.MainMenu();
