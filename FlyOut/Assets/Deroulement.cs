@@ -92,9 +92,11 @@ public class Deroulement : MonoBehaviour
         if(timer <= 112 && timer >= 111 && bool9 == false)
         {
             text.UpdateText("I finally feel like myself. ");
+            phase4.SetActive(false);
+            phase5.SetActive(true);
             bool9 = true;
         }
-        if(timer <= 120 && timer >= 119 && bool10 == false)
+        if(timer <= 130 && timer >= 129 && bool10 == false)
         {
             // text.UpdateText("I finally feel like myself. ");
             gM.MainMenu();
