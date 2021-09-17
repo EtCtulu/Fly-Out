@@ -41,7 +41,7 @@ public class TypeWriterEffect : MonoBehaviour
         }}
     }
 
-    IEnumerator ShowText()
+    public IEnumerator ShowText()
     {
         for(int i = 0; i < fullText.Length; i++){
             currentText = fullText.Substring(0,i);
